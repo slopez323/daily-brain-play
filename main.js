@@ -7,16 +7,20 @@ function isTouchScreendevice() {
 $('.getphrazy').click(function () {
     if (!isTouchScreendevice()) {
         window.location = 'https://getphrazy.com/'
-    } else {
+    } else if (window.width <= 540) {
         $('.getphrazy-play').slideDown();
+    } else {
+        $('.getphrazy-play').show();
     }
 })
 
 $('.word').click(function () {
     if (!isTouchScreendevice()) {
         window.location = 'https://word.dailybrainplay.com/'
-    } else {
+    } else if (window.width <= 540) {
         $('.word-play').slideDown();
+    } else {
+        $('.word-play').show();
     }
 })
 
