@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Syncopate&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
@@ -23,16 +23,26 @@
 
 <body>
     <!-- <div class="page"></div> -->
-    <h1>DAILY. BRAIN. PLAY.</h1>
     <div class="main">
+        <div class="title">
+            <h1>DAILY.</h1>
+            <h1>BRAIN.</h1>
+            <h1>PLAY.</h1>
+        </div>
         <div class="games">
-            <div class="gamebox getphrazy">
-                <button id="getphrazy-button">get <span>Phrazy</span></button>
-                <p id="getphrazy-desc">Guess the phraze of the day based on a given category.  The less letters revealed on the board, the higher the score!</p>
+            <div class="flip-container">
+                <div class="flip-inner getphrazy">
+                    <button class="front" id="getphrazy-button">get <span>Phrazy</span></button>
+                    <button class="back" id="getphrazy-desc">Guess the phraze of the day based on a given category. The less letters
+                        revealed on the board, the higher the score!</button>
+                </div>
             </div>
-            <div class="gamebox word">
-                <button id="word-button">Word!</button>
-                <p id="word-desc">Guess the Word! of the day with the least number of letters and clue words revealed.</p>
+            <div class="flip-container">
+                <div class="flip-inner word">
+                    <button class="front" id="word-button">Word!</button>
+                    <button class="back" id="word-desc">Guess the Word! of the day with the least number of letters and clue words
+                        revealed.</button>
+                </div>
             </div>
         </div>
     </div>
