@@ -135,11 +135,24 @@ button{
 
 @media (max-width: 450px){
     .main{
-        width: calc(100vw - 20px);
+        width: calc(100vw - 35px);
+        flex-direction: column;
+        margin-top: -100px;
+    }
+    .games{
+        flex-direction: row;
+        margin: 0;
+    }
+    .title{
+        text-align: center;
     }
     h1{
-        font-size: 45px;
+        font-size: 50px;
         margin:0;
+        display: inline-block;
+    }
+    .brainplay{
+        white-space: nowrap;
     }
     button, .flip-container{
         width: 50vw;

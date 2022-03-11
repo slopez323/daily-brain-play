@@ -1,15 +1,18 @@
 document.addEventListener("touchstart", function () { }, false);
 
-$('.getphrazy').click(function(){
-    window.location = 'https://getphrazy.com/'
+
+$('.getphrazy').click(function () {
+    if ($(window).width > 450) {
+        window.location = 'https://getphrazy.com/'
+    } else {
+
+    }
 })
 
-$('.word').click(function(){
-    window.location = 'https://word.dailybrainplay.com/'
-})
+$('.word').click(function () {
+    if ($(window).width > 450) {
+        window.location = 'https://word.dailybrainplay.com/'
+    } else {
 
-// $(window).resize(function(){
-//     if ($(window).width < 450){
-//     $(body).css({'background-image':'url(mobile-bg.png)'});
-//     }
-// });
+    }
+})
