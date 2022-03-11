@@ -164,7 +164,7 @@ button{
         height: min-content;
     } */
     #getphrazy-button{
-        padding: 5px 2px 0 2px;
+        padding: 8px 2px 0 2px;
         font-size: 20px;
     }
     #getphrazy-button span{
@@ -203,6 +203,7 @@ button{
     }
     .playnow{
         text-align: center;
+        height: 40px;
     }
     .getphrazy-play{
         background-color:#355071;
