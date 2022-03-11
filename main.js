@@ -1,8 +1,11 @@
 document.addEventListener("touchstart", function () { }, false);
 
+function isTouchScreendevice() {
+    return 'ontouchstart' in window || navigator.maxTouchPoints;      
+};
 
 $('.getphrazy').click(function () {
-    if ($(window).width > 450) {
+    if(!isTouchScreendevice()) {
         window.location = 'https://getphrazy.com/'
     } else {
 
@@ -10,7 +13,7 @@ $('.getphrazy').click(function () {
 })
 
 $('.word').click(function () {
-    if ($(window).width > 450) {
+    if(!isTouchScreendevice()) {
         window.location = 'https://word.dailybrainplay.com/'
     } else {
 

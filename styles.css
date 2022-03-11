@@ -133,11 +133,11 @@ button{
   }
   
 
-@media (max-width: 450px){
+@media (max-width: 540px){
     .main{
         width: calc(100vw - 35px);
         flex-direction: column;
-        margin-top: -100px;
+        margin-top: -200px;
     }
     .games{
         flex-direction: row;
@@ -157,18 +157,37 @@ button{
     button, .flip-container{
         width: 50vw;
     }
-    button{
-        height: min-content;
+    .flip-inner{
+        transition-delay: 0;
     }
+    /* button{
+        height: min-content;
+    } */
     #getphrazy-button{
-        padding: 0;
+        padding: 0 2px;
         font-size: 20px;
     }
     #getphrazy-button span{
         font-size: 32px;
     }
     #word-button{
-        font-size: 50px;
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 280px){
+    h1{
+        font-size: 35px;
+    }
+    #getphrazy-button{
+        padding: 0 2px;
+        font-size: 14px;
+    }
+    #getphrazy-button span{
+        font-size: 23px;
+    }
+    #word-button{
+        font-size: 32px;
     }
 }
 
