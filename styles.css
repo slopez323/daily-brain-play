@@ -131,7 +131,10 @@ button{
     color: #E5DCC8;
     transform: rotateY(180deg);
   }
-  
+
+  .playnow{
+      display: none;
+  }
 
 @media (max-width: 540px){
     .main{
@@ -157,18 +160,17 @@ button{
     button, .flip-container{
         width: 50vw;
     }
-    .flip-inner{
-        transition-delay: 0;
-    }
     /* button{
         height: min-content;
     } */
     #getphrazy-button{
-        padding: 0 2px;
+        padding: 5px 2px 0 2px;
         font-size: 20px;
     }
     #getphrazy-button span{
         font-size: 32px;
+        display: block;
+        margin-top: -10px;
     }
     #word-button{
         font-size: 45px;
@@ -191,13 +193,23 @@ button{
     }
 }
 
-@media (hover:hover){
-    /* #word-button:hover{
-        background-color:#003314;
-        color: #E5DCC8;
+@media (hover: none) {
+    .flip-inner{
+        transition: transform 0.3s linear 0.5s;
     }
-    #getphrazy-button:hover{
+    .flip-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .playnow{
+        text-align: center;
+    }
+    .getphrazy-play{
         background-color:#355071;
         color: #ccc;
-    } */
-}
+    }
+    .word-play{
+        color:#003314;
+    background-color: #E5DCC8;
+    }
+  }
