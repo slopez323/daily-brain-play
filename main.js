@@ -8,7 +8,7 @@ $('.getphrazy').click(function () {
     if (!isTouchScreendevice()) {
         window.location = 'https://getphrazy.com/'
     } else {
-        $('.getphrazy-play').show();
+        $('.getphrazy-play').slideDown();
     }
 })
 
@@ -16,7 +16,7 @@ $('.word').click(function () {
     if (!isTouchScreendevice()) {
         window.location = 'https://word.dailybrainplay.com/'
     } else {
-        $('.word-play').show();
+        $('.word-play').slideDown();
     }
 })
 

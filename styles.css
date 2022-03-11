@@ -198,12 +198,18 @@ button{
         transition: transform 0.3s linear 0.5s;
     }
     .flip-container{
-        display: flex;
-        flex-direction: column;
+        /* display: flex;
+        flex-direction: column; */
+        position: relative;
     }
     .playnow{
         text-align: center;
-        height: 40px;
+        padding: 20px 0;
+        position:absolute;
+        top: 120px;
+        width: 100%;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
     }
     .getphrazy-play{
         background-color:#355071;
