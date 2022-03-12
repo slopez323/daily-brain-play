@@ -5,23 +5,23 @@ function isTouchScreendevice() {
 };
 
 $('.getphrazy').click(function () {
-    if (!isTouchScreendevice()) {
+    // if (!isTouchScreendevice()) {
         window.location = 'https://getphrazy.com/'
-    } else if (window.width <= 540) {
-        $('.getphrazy-play').slideDown();
-    } else {
-        $('.getphrazy-play').show();
-    }
+    // } else if (window.width <= 540) {
+    //     $('.getphrazy-play').slideDown();
+    // } else {
+    //     $('.getphrazy-play').show();
+    // }
 })
 
 $('.word').click(function () {
-    if (!isTouchScreendevice()) {
+    // if (!isTouchScreendevice()) {
         window.location = 'https://word.dailybrainplay.com/'
-    } else if (window.width <= 540) {
-        $('.word-play').slideDown();
-    } else {
-        $('.word-play').show();
-    }
+    // } else if (window.width <= 540) {
+    //     $('.word-play').slideDown();
+    // } else {
+    //     $('.word-play').show();
+    // }
 })
 
 $('.getphrazy-play').click(function () {
