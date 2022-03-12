@@ -72,7 +72,10 @@ button{
   }
 
   .back{
-      font-size: 18px;
+      font-size: 17px;
+      white-space: pre-wrap;
+      font-family: 'Sumana', serif;
+      line-height: 90%;
   }
 
   @media (hover:hover){
@@ -138,6 +141,7 @@ button{
         /* position:absolute; */
        
         width: 60px;
+        padding-top: 100px;
 
         /* transform: rotate(90deg);
         left: -88px;
@@ -154,15 +158,13 @@ button{
         background-color:#355071;
         color: #ccc;
 
-        padding-top: 100px;
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
     }
     .word-play{
         color:#003314;
     background-color: #E5DCC8;
-    
-    padding-top: 90px;
+
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     }
