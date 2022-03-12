@@ -4,7 +4,7 @@ function isTouchScreendevice() {
     return 'ontouchstart' in window || navigator.maxTouchPoints;
 };
 
-$('.getphrazy').click(function () {
+$('.getphrazy-container').click(function () {
     // if (!isTouchScreendevice()) {
         window.location = 'https://getphrazy.com/'
     // } else if (window.width <= 540) {
@@ -14,7 +14,7 @@ $('.getphrazy').click(function () {
     // }
 })
 
-$('.word').click(function () {
+$('.word-container').click(function () {
     // if (!isTouchScreendevice()) {
         window.location = 'https://word.dailybrainplay.com/'
     // } else if (window.width <= 540) {
@@ -24,10 +24,10 @@ $('.word').click(function () {
     // }
 })
 
-$('.getphrazy-play').click(function () {
-    window.location = 'https://getphrazy.com/'
-})
+// $('.getphrazy-play').click(function () {
+//     window.location = 'https://getphrazy.com/'
+// })
 
-$('.word-play').click(function () {
-    window.location = 'https://word.dailybrainplay.com/'
-})  
+// $('.word-play').click(function () {
+//     window.location = 'https://word.dailybrainplay.com/'
+// })  
