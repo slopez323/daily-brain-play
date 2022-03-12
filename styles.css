@@ -4,6 +4,7 @@ body{
     font-family: 'Cabin', sans-serif;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -77,6 +78,16 @@ button{
       font-family: 'Cabin', sans-serif;
   }
 
+  .contact{
+      /* white-space: pre-wrap; */
+      text-align: center;
+  }
+
+  a{
+      text-decoration: none;
+      color: black;
+  }
+
   @media (hover:hover){
     .flip-inner {
         position: relative;
@@ -127,8 +138,9 @@ button{
     .flip-container{
         /* display: flex; */
         position: relative;
-        width: auto;
-
+        width: auto;        
+    }
+    .getphrazy-container{
         margin-bottom: 15px;
     }
     .games{
@@ -178,7 +190,7 @@ button{
     .main{
         /* width: calc(100vw - 35px); */
         flex-direction: column;
-        margin: 20px 10px;
+        margin: 20px 10px 10px 10px;
         /* margin-top: -100px; */
     }
     .games{
@@ -213,12 +225,15 @@ button{
     }
     #getphrazy-button{
         padding: 0 2px;
-        font-size: 14px;
+        font-size: 22px;
     }
     #getphrazy-button span{
-        font-size: 23px;
+        font-size: 35px;
     }
     #word-button{
-        font-size: 32px;
+        font-size: 50px;
+    }
+    .back{
+        font-size: 15px;
     }
 }
