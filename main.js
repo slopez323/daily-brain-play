@@ -9,9 +9,11 @@ $(window).resize(setHandlers);
 
 function setHandlers() {
     if (isTouchScreendevice()) {
+        $('.flip-container').show()
         $('.back').hide()
         $('.playnow').hide()
         $('.up').hide()
+        $('.down').show()
 
         $('#getphrazy-button').off()
         $('#word-button').off()
