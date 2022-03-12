@@ -135,7 +135,7 @@ button{
     }
     .playnow{
         /* width: 60px; */
-        padding: 10px;
+        padding: 10px 0;
         text-align: center;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
