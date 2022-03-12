@@ -120,8 +120,9 @@ button{
 
   @media (hover: none) {
     .flip-inner{
-        display: flex;
-        flex-direction: column;
+        /* display: flex;
+        flex-direction: column; */
+        width: auto;
     }
     .flip-container{
         /* display: flex; */
@@ -165,7 +166,7 @@ button{
         padding: 10px 0;
     }
     button{
-        width: auto;
+        width: 100%;
     }
   }
 
