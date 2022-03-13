@@ -12,8 +12,7 @@ function setHandlers() {
         $('.flip-container').show()
         $('.back').hide()
         $('.playnow').hide()
-        $('.up').hide()
-        $('.down').show()
+        $('.show').addClass('down')
 
         $('#getphrazy-button').off()
         $('#word-button').off()
@@ -23,24 +22,24 @@ function setHandlers() {
                 $('#getphrazy-desc').slideToggle();
                 $('.getphrazy-play').slideToggle();
                 $('.word-container').slideToggle();
-                $('#getphrazy-button .show').toggle();
+                $('#getphrazy-button .show').toggleClass('down');
             })
             $('#word-button').click(function () {
                 $('#word-desc').slideToggle();
                 $('.word-play').slideToggle();
                 $('.getphrazy-container').slideToggle();
-                $('#word-button .show').toggle();
+                $('#word-button .show').toggleClass('down');
             })
         } else {
             $('#getphrazy-button').click(function () {
                 $('#getphrazy-desc').slideToggle();
                 $('.getphrazy-play').slideToggle();
-                $('#getphrazy-button .show').toggle();
+                $('#getphrazy-button .show').toggleClass('down');
             })
             $('#word-button').click(function () {
                 $('#word-desc').slideToggle();
                 $('.word-play').slideToggle();
-                $('#word-button .show').toggle();
+                $('#word-button .show').toggleClass('down');
             })
         }
         $('#getphrazy-desc').click(function () {
