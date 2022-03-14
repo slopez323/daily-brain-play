@@ -193,7 +193,7 @@ button{
   }
 
 
-@media (max-width: 540px){
+@media (max-width: 767px){
     body{
         display: block;
     }
@@ -223,21 +223,26 @@ button{
     }
 }
 
-@media (max-width: 280px){
+@media (max-width: 364px){
     h1{
         font-size: 35px;
     }
     #getphrazy-button{
-        padding: 0 2px;
+        padding-top: 34px;
         font-size: 22px;
     }
     #getphrazy-button span{
         font-size: 35px;
+        line-height: 1.2em;
     }
     #word-button{
+        padding-top: 25px;
         font-size: 50px;
     }
     .back{
         font-size: 15px;
+    }
+    button{
+        height: 115.5px;
     }
 }
