@@ -1,3 +1,8 @@
+const analytics = {
+    PHRAZY: "clicked_getphrazy",
+    WORD: "clicked_word"
+}
+
 document.addEventListener("touchstart", function () { }, false);
 
 function isTouchScreendevice() {
@@ -43,24 +48,36 @@ function setHandlers() {
             })
         }
         $('#getphrazy-desc').click(function () {
+            sendEvent(analytics.PHRAZY);
             window.location = 'https://getphrazy.com/'
         })
         $('.getphrazy-play').click(function () {
+            sendEvent(analytics.PHRAZY);
             window.location = 'https://getphrazy.com/'
         })
         $('#word-desc').click(function () {
+            sendEvent(analytics.WORD);
             window.location = 'https://word.dailybrainplay.com/'
         })
         $('.word-play').click(function () {
+            sendEvent(analytics.WORD);
             window.location = 'https://word.dailybrainplay.com/'
         })
     } else {
         $('.getphrazy-container').click(function () {
+            sendEvent(analytics.PHRAZY);
             window.location = 'https://getphrazy.com/'
         })
 
         $('.word-container').click(function () {
+            sendEvent(analytics.WORD);
             window.location = 'https://word.dailybrainplay.com/'
         })
     }
 }
+
+function sendEvent(action, values) {
+    if (window.gtag) {
+        gtag("event", action, { data: JSON.stringify(values) });
+    };
+};
