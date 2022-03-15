@@ -135,7 +135,7 @@ button{
     }
 
 
-@media (max-width: 767px) and (max-device-width: 767px){
+@media (max-width: 600px){
     .flip-inner{
         max-width: none;
     }
