@@ -96,7 +96,7 @@ button{
       transform: rotate(180deg);
   }
 
-  @media (hover:hover){
+/*  @media (hover:hover){
     .flip-inner {
         position: relative;
         width: 100%;
@@ -121,7 +121,7 @@ button{
         left: 0;
         width: 100%;
         height: 100%;
-        -webkit-backface-visibility: hidden; /* Safari */
+        -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
       }
     
@@ -139,8 +139,9 @@ button{
         visibility: hidden;
     }
   }
+*/
 
-  @media (hover: none) {
+/*  @media (hover: none) { */
       h1{
           padding-top: 3px;
       }
@@ -190,7 +191,7 @@ button{
         padding-top: 30px;
         line-height: 48px;
     }
-  }
+/*  } */
 
 
 @media (max-width: 767px){
@@ -244,5 +245,11 @@ button{
     }
     button{
         height: 115.5px;
+    }
+}
+
+@media (hover:hover){
+    .back, .playnow, .show{
+        cursor: pointer;
     }
 }

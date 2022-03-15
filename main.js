@@ -13,7 +13,7 @@ $(document).ready(setHandlers);
 $(window).resize(setHandlers);
 
 function setHandlers() {
-    if (isTouchScreendevice()) {
+    // if (isTouchScreendevice()) {
         $('.flip-container').show()
         $('.back').hide()
         $('.playnow').hide()
@@ -63,17 +63,17 @@ function setHandlers() {
             sendEvent(analytics.WORD);
             window.location = 'https://word.dailybrainplay.com/'
         })
-    } else {
-        $('.getphrazy-container').click(function () {
-            sendEvent(analytics.PHRAZY);
-            window.location = 'https://getphrazy.com/'
-        })
+    // } else {
+    //     $('.getphrazy-container').click(function () {
+    //         sendEvent(analytics.PHRAZY);
+    //         window.location = 'https://getphrazy.com/'
+    //     })
 
-        $('.word-container').click(function () {
-            sendEvent(analytics.WORD);
-            window.location = 'https://word.dailybrainplay.com/'
-        })
-    }
+    //     $('.word-container').click(function () {
+    //         sendEvent(analytics.WORD);
+    //         window.location = 'https://word.dailybrainplay.com/'
+    //     })
+    // }
 }
 
 function sendEvent(action, values) {
