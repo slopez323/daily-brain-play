@@ -163,16 +163,16 @@ button{
         margin: 0;
     }
     .title{
-        text-align: center;
+        text-align: left;
     }
     h1{
         font-size: 50px;
         margin:0;
-        display: inline-block;
+        /* display: block; */
     }
-    .brainplay{
+    /* .brainplay{
         white-space: nowrap;
-    }
+    } */
     .flip-container{
         height: auto;
     }
