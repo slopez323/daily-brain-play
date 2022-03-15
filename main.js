@@ -42,11 +42,11 @@ function setHandlers() {
     };
     $('#getphrazy-desc').click(function () {
         sendEvent(analytics.PHRAZY);
-        window.location = 'https://getphrazy.com/'
+        window.location = 'https://getphrazy.dailybrainplay.com/'
     });
     $('.getphrazy-play').click(function () {
         sendEvent(analytics.PHRAZY);
-        window.location = 'https://getphrazy.com/'
+        window.location = 'https://getphrazy.dailybrainplay.com/'
     });
     $('#word-desc').click(function () {
         sendEvent(analytics.WORD);
