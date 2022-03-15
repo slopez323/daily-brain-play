@@ -192,6 +192,12 @@ button{
     button{
         height: 115.5px;
     }
+    .flip-inner{
+        min-width: auto;
+    }
+    a{
+        display: block;
+    }
 }
 
 @media (hover:hover){
