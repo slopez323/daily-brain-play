@@ -5,11 +5,11 @@ const analytics = {
   
   $('.getphrazy-container').click(function () {
     sendEvent(analytics.PHRAZY);
-    window.location = 'https://getphrazy.dailybrainplay.com/'
+    window.open('https://getphrazy.dailybrainplay.com/','_system');
   });
   $('.word-container').click(function () {
     sendEvent(analytics.WORD);
-    window.location = 'https://word.dailybrainplay.com/'
+    window.open('https://word.dailybrainplay.com/','_system');
   });
   
   function sendEvent(action, values) {
